@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Matemáticas </title>
+    <link rel="stylesheet" href="css/style-math.css">
+    <link rel="shortcut icon" href="img/m-edutech.png">
+</head>
+
+<body>
+
+    <!-- Cabecera de la página -->
+
+    <header id="main-header">
+
+        <!-- Logotipo en la cabecera -->
+
+        <a href="index.html">
+
+            <nav class="logo">
+                <img src="img/edutechwhite.png">
+                <h2> EduTech </h2>
+            </nav>
+
+        </a>
+
+        <hr>
+
+        <!-- Títulos de la cabecera -->
+
+        <hgroup>
+            <h1> Matemáticas </h1>
+            <h2> Contenido </h2>
+        </hgroup>
+
+    </header>
+
+    <!-- Índice de los temas -->
+
+    <section class="index-section">
+
+        <!-- Contenedor del índice -->
+
+        <article class="container">
+
+            <!-- Primer lapso - Índice -->
+
+            <div id="first-moment">
+
+                <!-- Título -->
+
+                <h1 class="title-moment"> Primer Lapso </h1>
+
+                <!-- Temas -->
+
+                <a href="#arrays"> OBJ. 1: Matrices </a>
+                <a href="#determinants"> OBJ. 2: Determinantes </a>
+                <a href="#laplaces-theorem"> OBJ. 3: Teorema de Laplace </a>
+
+            </div>
+
+            <!-- Segundo lapso - Índice -->
+
+            <div id="second-moment">
+
+                <!-- Título -->
+
+                <h1 class="title-moment"> Segundo Lapso </h1>
+
+                <!-- Temas -->
+
+                <a href="#equation-system"> OBJ. 1: Sistemas de ecuaciones </a>
+                <a href="#divisibility"> OBJ. 2: Divisibilidad de polinomios </a>
+                <a href="#ruffini"> OBJ. 3: Ruffini y factorización </a>
+
+            </div>
+
+            <div id="third-moment">
+
+                <!-- Título -->
+
+                <h1 class="title-moment"> Tercer Lapso </h1>
+
+                <!-- Temas -->
+
+                <a href="#circum-n-ellipse"> OBJ. 1: Secciones cónicas: circunferencia y elipse </a>
+                <a href="#hyperbola"> OBJ. 2: Secciones cónicas: hipérbola </a>
+                <a href="#inequations"> OBJ. 3: Inecuaciones </a>
+
+            </div>
+
+        </article>
+
+    </section>
+
+    <!-- Primer lapso - Contenido -->
+
+    <section class="first-moment-content">
+
+        <!-- OBJ. 1: Matrices -->
+
+        <div id="arrays">
+
+            <!-- Título -->
+
+            <h2> Matrices </h2>
+
+            <!-- Contenido -->
+
+            <p> Una matriz es un arreglo de números ordenado, que consiste en una serie de filas y columnas, de modo que cada elemento ocupa una posición y puede ser identificado por su número de fila y de columna. </p>
+
+            <br>
+
+            <p> Dadas dos matrices podremos realizar ciertas operaciones entre ellas siempre que cumplan determinadas condiciones. </p>
+
+            <br>
+
+            <p> El origen de las matrices es muy antiguo. Los cuadrados latinos y los cuadrados mágicos se estudiaron desde hace mucho tiempo. Un cuadrado mágico, 3 por 3, se registra en la literatura china hacia el 650 a. C. </p>
+
+            <br>
+
+            <h3> Suma de matrices </h3>
+
+            <br>
+
+            <p> La matriz suma se obtiene sumando los elementos de las dos matrices que ocupan la misma misma posición. </p>
+
+            <br>
+
+            <p> Si las matrices <b> A = (aij) </b> y <b> B = (bij) </b> tienen la misma dimensión, la matriz suma es: </p>
+
+            <br>
+
+            <center> A + B = (aij + bij) </center>
+
+            <br>
+
+            <h3> Propiedades de la suma de matrices </h3>
+
+            <br>
+
+            <h4> Interna </h4>
+
+            <br>
+
+            <p> La suma de dos matrices de orden m x n es otra matriz dimensión m x n. El resultado de la matriz suma tendrá el mismo número de filas y columnas que las que se suman. </p>
+
+            <br>
+
+            <h4> Asociativa </h4>
+
+            <br>
+
+            <p> La propiedad asociativa de la suma para las matrices establece: Digamos que A, B, y C son matrices m × n. Entonces, (A + B) + C = A + (B + C). </p>
+
+            <br>
+
+            <center> A + (B + C) = (A + B) + C </center>
+
+            <br>
+
+            <h4> Elemento neutro </h4>
+
+            <br>
+
+            <center> A + 0 = A </center>
+
+            <br>
+
+            <p> Donde O es la matriz nula de la misma dimensión que la matriz A. </p>
+
+            <br>
+
+            <h4> Elemento opuesto </h4>
+
+            <br>
+
+            <p> La matriz opuesta es aquella en que todos los elementos están cambiados de signo. </p>
+
+            <br>
+
+            <h4> Conmutativa </h4>
+
+            <br>
+
+            <center> A + B = B + A </center>
+
+            <br>
+
+            <p> Ejemplos: </p>
+
+            <img src="img/m-1.1.jpg">
+
+            <img src="img/m-1.2.jpg">
+
+            <p> Para mayor explicación, dirígase a los recursos multimedia. </p>
+
+            <br>
+
+            <h3> Resta de matrices </h3>
+
+            <br>
+
+            <p> Para comprender la noción de resta de matrices, primero debemos saber qué son las matrices en el ámbito de la matemática. Una matriz es una serie de símbolos y/o números que se ubican en líneas verticales y horizontales y que se disponen como rectángulo. </p>
+
+            <br>
+
+            <p> Cada uno de los números que componen este arreglo en dos dimensiones al que llamamos matriz se denomina entrada, y debe estar ordenado en filas (que también se conocen con el nombre de renglones) y columnas, como se menciona en el párrafo anterior. La forma de referirse a una matriz con un número n de filas y uno m de columnas es matriz n x m (nótese que la x es el signo de multiplicación, por lo cual se lee “por”). </p>
+
+            <br>
+            
+            <p>  Es importante señalar que las matrices tienen diversas aplicaciones, algunas de las cuales se resumen a continuación: </p>
+
+            <br>
+
+            <p> Para restar dos matrices, por lo tanto, se deben restar entre sí aquellos componentes que se sitúan en la misma posición. Tomemos el ejemplo de esta primera imagen, con sus dos matrices. </p>
+
+            <br>
+
+            <p> En este caso, siguiendo con la definición que dimos líneas arriba, deberíamos completar los siguientes pasos para resolver la operación. Comenzamos con la primera columna (es decir, con los números en sentido vertical): </p>
+
+            <br>
+
+            <center> 
+                2 – 6 = – 4
+                <br>
+                3 – 2 = 1
+                .<br>
+                5 – (–1) = 6 
+            </center>
+
+            <br>
+
+            <p> Luego seguimos con la segunda columna: </p>
+            
+            <br>
+
+            <center> 
+                5 – (–2) = 7
+                <br>
+                2 – 4 = – 2
+                <br>
+                – 6 – 8 = – 14
+            </center>
+
+            <br>
+
+            <p> Finalmente, restamos los elementos de la tercera columna: </p>
+
+            <br>
+
+            <center> 
+                – 4 – 3 = – 7
+                <br>
+                1 – 5 = – 4
+                <br>
+                3 – 5 = – 2
+            </center>
+
+            <img src="img/m-1.3.jpg">
+
+            <br> <br>
+
+            <p> De este modo, sólo nos queda ordenar los números para obtener el resultado de esta resta de matrices, tal y como se en la imagen de arriba. </p>
+
+            <br>
+
+            <p> Ejemplos: </p>
+
+            <img src="img/m-1.4.jpg">
+
+            <br>
+
+            <h3> Multiplicación </h3>
+
+            <br>
+
+            <p> Dos matrices A y B son multiplicables si el número de columnas de A coincide con el número de filas de B. </p>
+
+            <br>
+
+            <center> Mm x n x Mn x p = M m x p </center>
+
+            <br>
+
+            <p> Ejemplo: </p>
+
+            <img src="img/m-1.5.jpg">
+
+            <br> <br>
+
+            <p> En este caso, ambas matrices son de 3 filas por 3 columnas, por lo que las hace multiplicables entre sí; su resultado va a ser el de la matriz C, también una matriz de 3x3. </p>
+
+            <br>
+
+            <p> El elemento cij de la matriz producto se obtiene multiplicando cada elemento de la fila i de la matriz A por cada elemento de la columna j de la matriz B y sumándolos. </p>
+
+            <br>
+
+            <h3> Propiedades de la multiplicación de matrices </h3> 
+
+            <br>
+
+            <h4> Asociativa </h4>
+
+            <br>
+
+            <center> A · (B · C) = (A · B) · C </center>
+
+            <br>
+
+            <h4> Elemento neutro </h4>
+            
+            <center> A · I = A </center> 
+
+            <br>
+
+            <p> Donde I es la matriz identidad del mismo orden que la matriz A. </p>
+
+            <br>
+
+            <h4> No es Conmutativa </h4>
+
+            <br>
+            
+            <center> A · B ≠ B · A </center>
+
+            <br>
+
+            <h4> Distributiva del producto respecto de la suma </h4>
+
+            <br>
+
+            <center> A · (B + C) = A · B + A · C </center>
+
+            <br>
+
+            <p> Para más información, haga clic sobre el siguiente enlace: <a href="//n9.cl/imkcm"> //n9.cl/imkcm </a> </p>
+
+        </div>
+
+        <!-- OBJ. 2: Determinantes -->
+
+        <div id="determinants">
+
+            <!-- Título -->
+
+            <h2> Determinantes </h2>
+
+            <!-- Contenido -->
+
+            <p> El determinante de una matriz cuadrada es un número que se obtiene como resultado de realizar una serie de operaciones con sus elementos. De este valor se pueden deducir importantes propiedades de los elementos que lo componen. Tiene, además, muchas aplicaciones en la Geometría y el Álgebra. </p>
+
+            <br>
+            
+            <p> Llamamos determinante de orden 1 o determinante de primer orden al valor del determinante de una matriz de dimensión 1x1. </p>
+
+            <br>
+
+            <p> Llamamos determinante de orden 2 o determinante de segundo orden al valor del determinante de una matriz de dimensión 2x2. </p>
+
+            <br>
+
+            <img src="img/m-2.5.jpg">
+
+            <br> <br>
+
+            <p> Para más información, haga clic sobre el siguiente enlace: <a href="https://n9.cl/nmod3"> //n9.cl/nmod3 </a> </p>
+
+            <br>
+
+            <p> Llamamos determinante de orden 3 o determinante de tercer orden al valor del determinante de una matriz de dimensión 3x3. </p>´
+
+            <br>
+
+            <p> Para poder resolver determinantes, portamos de distintas formas o métodos que nos pueden resultar ante su resolución. Entre ellos, tenemos la regla de Sarrus. </p>
+
+            <br>
+
+            <h3> Regla de Sarrus </h3>
+
+            <br>
+            
+            <p> La regla de Sarrus es un método usado para calcular el determinante de una matriz cuadrada de tercer orden. Recibe su nombre del matemático francés Pierre Frédéric Sarrus, que la introdujo en el artículo Nouvelles méthodes pour la résolution des équations, publicado en Estrasburgo en 1833. </p>
+
+            <br>
+
+            <p> La regla de Sarrus nos sirve para resolver de manera muy sencilla el determinante de una matriz de 3×3. </p>
+
+            <br>
+
+            <p> Si la matriz  de 3×3 es: </p>
+
+            <br>
+
+            <img src="img/m-2.1.jpg">
+
+            <br>
+
+            <p> Se calcula como: </p>
+
+            <img src="img/m-2.2.jpg">
+
+            <br>
+
+            <p> Si nos fijamos, la mitad de los sumandos tienen signo + y la otra mitad signo -. En este caso los productos positivos están formados por los elementos de la diagonal principal y sus dos paralelas multiplicadas por el elemento que está en el extremo opuesto. De manera análoga, los productos negativos están formada por los elementos de  la secundaria y sus paralelas multiplicadas por el elemento extremo de las mismas. A este método es al que se le conoce como la “regla de Sarrus”. </p>
+
+            <img src="img/m-2.3.jpg">
+
+            <br>
+
+            <p> Las diagonales azules se suman y las diagonales rojas se restan. En este caso, el determinante es la zona sombreada de gris y hemos repetido las dos primeras filas en la zona inferior. </p>
+
+            <br>
+
+            <p> Ejemplos resueltos: </p>
+
+            <img src="img/m-2.4.jpg">
+
+            <br> <br>
+
+            <p> Para más información, haga clic sobre los siguientes enlaces: </p>
+
+            <br>
+
+            <p> <a href="https://n9.cl/1a24x"> //n9.cl/1a24x </a> </p>
+
+            <p> <a href="https://n9.cl/c1yho"> //n9.cl/c1yho </a> </p>
+
+        </div>
+
+        <!-- OBJ. 3: Teorema de laplace (Método para determinantes) -->
+
+        <div id="laplaces-theorem">
+
+            <!-- Título -->
+
+            <h2> Teorema de Laplace </h2>
+
+            <!-- Contenido -->
+
+            <p> La regla de Laplace es un método que permite calcular rápidamente el determinante de una matriz cuadrada con dimensión de 3×3 o mayor mediante una serie de expansión recursiva. </p>
+
+            <br>
+
+            <p> En otras palabras, la regla de Laplace factoriza la matriz inicial en matrices de menor dimensión y ajusta su signo en función de la posición del elemento en la matriz. </p>
+
+            <br>
+
+            <p> Este método se puede desarrollar mediante filas o columnas. </p>
+
+            <br>
+
+            <h4> Explicación teórica para la regla de Laplace </h4>
+
+            <br>
+
+            <p> Definimos A3×3 como:  </p>
+
+            <img src="img/m-3.1.jpg">
+
+            <br> <br> <br>
+
+            <p> Empecemos por el primer elemento a11. Rallamos las filas y columnas que integren a11. Los elementos que queden sin rallar, será el primer determinante menor multiplicado por a11. </p>
+
+            <img src="img/m-3.2.jpg">
+            
+            <br>
+
+            <p> Seguimos con el segundo elemento de la primera fila, es decir, a12. Repetimos el proceso: rallamos las filas y columnas que contengan a12. </p>
+
+            <img src="img/m-3.3.jpg">
+
+            <br>
+
+            <p> Ajustamos el signo del menor: </p>
+
+            <img src="img/m-3.4.jpg">
+
+            <br>
+
+            <p> Añadimos el segundo determinante menor al resultado anterior y formamos una serie de expansión, tal que: </p>
+
+            <img src="img/m-3.5.jpg">
+
+            <br> <br>
+
+            <p> Continuamos con el tercer elemento de la primera fila, es decir, a13. Repetimos el proceso: rallamos la fila y la columna que contengan a13. </p>
+            
+            <img src="img/m-3.6.jpg">
+
+            <br>
+
+            <p> Añadimos el tercer determinante menor al resultado anterior y ampliamos la serie de expansión, tal que: </p>
+
+            <img src="img/m-3.7.jpg">
+
+            <br> <br>
+
+            <p> Dado que ya no quedan más elementos en la primera fila, entonces cerrramos el proceso recursivo. Calculamos los determinantes menores. </p>
+
+            <br>
+            
+            <p> De la misma forma que se han empleado elementos de la primera fila, este método también se puede aplicar con las columnas. </p>
+
+            <br>
+
+            <h4> Ejemplo práctico para la regla de Laplace </h4>
+            
+            <br>
+
+            <p> Definimos R3×3 como: </p>
+
+            <img src="img/m-3.8.jpg">
+
+            <br> <br>
+
+            <p> Empecemos por el primer elemento r11 = 5. Rallamos las filas y columnas que integren r11 = 5. Los elementos que queden sin rallar, será el primer determinante menor multiplicado por r11 = 5. </p>
+
+            <img src="img/m-3.9.jpg">
+
+            <br>
+
+            <p> Seguimos con el segundo elemento de la primera fila, es decir, r12 = 2. Repetimos el proceso: rallamos las filas y columnas que contengan r12 = 2. </p>
+
+            <img src="img/m-3.10.jpg">
+
+            <br>
+
+            <p> Ajustamos el signo del menor: </p>
+
+            <img src="img/m-3.11.jpg">
+
+            <br> <br>
+
+            <p> Añadimos el segundo determinante menor al resultado anterior y formamos una serie de expansión, tal que: </p>
+
+            <img src="img/m-3.12.jpg">
+
+            <br> <br>
+            
+            <p> Continuamos con el tercer elemento de la primera fila, es decir, r13 = 3. Repetimos el proceso: rallamos la fila y la columna que contengan r13 = 3. </p>
+
+            <img src="img/m-3.13.jpg">
+
+            <br>
+
+            <p> Añadimos el tercer determinante menor al resultado anterior y ampliamos la serie de expansión, tal que: </p>
+
+            <img src="img/m-3.14.jpg">
+
+            <br> <br>
+
+            <p> El determinante de la matriz R3×3 es 15. </p>
+
+            <br>
+
+            <p> Para más información, haga clic sobre el siguiente enlace: <a href="https://n9.cl/7pt8h"> //n9.cl/7pt8h </a> </p>
+
+        </div>
+
+    </section>
+
+    <!-- Segundo lapso - Contenido -->
+
+    <section class="second-moment-content">
+
+        <!-- OBJ. 1: Sistemas de ecuaciones -->
+
+        <div id="equation-system">
+
+            <!-- Titulo -->
+
+            <br> <!-- Separación considerable -->
+            <h2> Sistema de ecuaciones </h2>
+
+            <!-- Contenido -->
+
+            <br>
+
+            <p> Se llama sistema de ecuaciones todo conjunto de ecuaciones distintas que tiene una o más soluciones comunes. </p>
+
+            <br>
+
+            <p> Resolver un sistema de ecuaciones simultáneas es hallar el conjunto de valores que satisfacen simultáneamente cada una de sus ecuaciones. </p>
+
+            <br>
+
+            <h3> Sistemas de ecuaciones: regla de Cramer </h3>
+
+            <br>
+
+            <p> La regla de Cramer proporciona la solución de sistemas de ecuaciones lineales compatibles determinados (con una única solución) mediante el cálculo de determinantes. Se trata de un método muy rápido para resolver sistemas, sobre todo, para sistemas de dimensión 2x2 y 3x3. Para dimensiones mayores, los determinantes son bastante más engorrosos. </p>
+
+            <br>
+
+            <p> Recordad que un sistema de ecuaciones puede escribirse en forma matricial como: </p>
+
+            <img src="img/m-4.1.png" style="width: 20%;">
+
+            <br> <br>
+
+            <p>
+                Donde:
+                
+                <br> <br>
+
+                <li> A  es la matriz de coeficientes del sistema, </li>
+                <li> X es la matriz con las incógnitas, </li>
+                <li> B es la matriz con los términos independientes de las ecuaciones. </li>
+            </p>
+
+            <br>
+
+            <p> Para poder aplicar Cramer, la matriz A tiene que ser cuadrada y regular (determinante distinto de 0). </p>
+
+            <br>
+
+            <p> La regla de Cramer establece que la incógnita xk de la solución del sistema, cuyos coeficientes están en la columna k de A, es: </p>
+
+            <img src="img/m-4.2.jpg" style="width: 20%;">
+
+            <br>
+
+            <p> Donde Ak es como la matriz A pero cambiando su columna número k por la columna de términos independientes. </p>
+
+            <br>
+
+            <h3> Ejemplos de la regla de Cramer </h3>
+
+            <br>
+
+            <h4> Ejemplo 1 </h4>
+
+            <br>
+
+            <h4> Sistema de dimensión 2x2: </h4>
+
+            <img src="img/m-4.3.jpg" style="width: 20%;">
+
+            <br>
+
+            <h4> Solución </h4>
+
+            <br>
+
+            <p> La matriz de coeficientes del sistema es: </p>
+
+            <img src="img/m-4.4.jpg" style="width: 20%;">
+
+            <br>
+
+            <p> La matriz de incógnitas es: </p>
+
+            <img src="img/m-4.5.jpg" style="width: 20%;">
+
+            <br>
+
+            <p> La matriz de términos independientes es: </p>
+
+            <img src="img/m-4.6.jpg" style="width: 20%;">
+
+            <br>
+
+            <p> Calculamos el determinante de A: </p>
+
+            <img src="img/m-4.7.png" style="width: 20%;">
+
+            <br>
+
+            <p> Podemos aplicar la regla de Cramer. </p>
+
+            <br>
+
+            <p> La primera incógnita es x, cuyos coeficientes son los de la primera columna de A. La matriz A1 es como A pero cambiando dicha columna por la columna B: </p>
+
+            <img src="img/m-4.8.jpg" style="width: 20%;">
+
+            <br>
+
+            <p> Calculamos x: </p>
+
+            <img src="img/m-4.9.jpg" style="width: 20%;">
+
+            <br> <br>
+
+            <p> La segunda incógnita es y. Sus coeficientes son los de la segunda columna de A. Tenemos que calcular el determinante de la matriz. </p>
+
+            <img src="img/m-4.10.jpg" style="width: 20%;">
+
+            <br>
+
+            <p> Calculamos y: </p>
+
+            <img src="img/m-4.11.jpg" style="width: 20%;">
+
+            <br> <br>
+
+            <p> Por tanto, la solución del sistema es: </p>
+
+            <img src="img/m-4.12.jpg" style="width: 20%;">
+
+            <br> <br>
+
+            <h4> Ejemplo 2 </h4>
+
+            <br>
+
+            <h4> Sistema de dimensión 3x3 </h4>
+
+            <img src="img/m-4.13.png" style="width: 20%;">
+
+            <br>
+
+            <h4> Solución </h4>
+
+            <br>
+
+            <p> La matriz de coeficientes del sistema es: </p>
+
+            <img src="img/m-4.14.png" style="width: 20%;">
+
+            <br>
+
+            <p> La matriz de incógnitas es: </p>
+
+            <img src="img/m-4.15.jpg" style="width: 20%;">
+
+            <br>
+
+            <p> La matriz de términos independientes es: </p>
+
+            <img src="img/m-4.16.jpg" style="width: 20%;">
+
+            <br>
+
+            <p> Calculamos el determinante de A: </p>
+
+            <img src="img/m-4.17.jpg" style="width: 20%;">
+
+            <br> <br>
+
+            <p> Podemos aplicar la regla de Cramer. </p>
+
+            <br>
+
+            <p> La matriz A1 es como A pero cambiando la columna 1 por la columna B: </p>
+
+            <img src="img/m-4.18.jpg" style="width: 20%;">
+
+            <br>
+
+            <p> Calculamos x: </p>
+
+            <img src="img/m-4.19.jpg" style="width: 20%;">
+
+            <br> <br>
+
+            <p> La matriz A2 es como A pero cambiando la columna 2 por la columna B: </p>
+
+            <img src="img/m-4.20.jpg" style="width: 20%;">
+
+            <br>
+
+            <p> Calculamos y: </p>
+
+            <img src="img/m-4.21.jpg" style="width: 20%;">
+
+            <br> <br>
+
+            <p> La matriz A3 es como A pero cambiando la columna 3 por la columna B: </p>
+
+            <img src="img/m-4.22.jpg" style="width: 20%;">
+
+            <br>
+
+            <p> Calculamos z: </p>
+
+            <img src="img/m-4.23.jpg" style="width: 20%;">
+
+            <br> <br>
+
+            <p> Por tanto, la solución del sistema es: </p>
+
+            <img src="img/m-4.24.jpg" style="width: 20%;">
+
+            <br> <br>
+
+            <p> 
+                Para más información, haga clic en el siguiente enlace: 
+
+                <br> <br>
+
+                <a href="https://n9.cl/841cb7"> //n9.cl/841cb7 </a>
+
+                <br>
+
+                <a href="https://n9.cl/tp8xv"> //n9.cl/tp8xv </a>
+
+            </p>
+            
+        </div>
+
+        <!-- OBJ. 2: Divisibilidad de polinomios -->
+
+        <div id="divisibility"> 
+
+            <!-- Título -->
+
+            <h2> Divisibilidad de polinomios </h2>
+
+            <!-- Contenido -->
+
+            <br>
+
+            <p> La divisibilidad algebraica posee diferencias con respecto a la divisibilidad numérica, diferencias que vamos a analizar y que se pueden considerar como muy importantes: </p>
+
+            <br>
+
+            <p> Cualquier polinomio entero es siempre divisible por cualquier número o constante, distinto de cero. </p>
+
+            <br>
+
+            <li> Los números o polinomios de grado cero actúan en la divisibilidad del polinomio lo mismo que lo hace la unidad en la divisibilidad numérica. (En la divisibilidad numérica, la unidad es divisor de cualquier número. En la divisibilidad algebraica, cualquier número es divisor de cualquier polinomio). 
+
+            <br> <br>
+
+            Ejemplo:
+
+            <br> <br>
+
+            <center> x² – 3x + 2 : 5 = 1/5x² – 3/5x + 2/5 (y puedes comprobar que el resto es 0). </center>
+
+            </li>
+
+            <br>
+
+            <li> Cualquier polinomio P(x) que sea divisible por otro polinomio Q(x), también es divisible por el divisor Q(x) multiplicado por un número cualquiera K distinto de cero.
+
+            <br> <br>
+            
+            O sea:
+
+            <br> <br>
+            
+            <center> P(x) / Q(x) = C(x) ⇒ P(x) / K⋅Q(x) = 1/K⋅C(x) ⇒ P(x) / (1/K)⋅Q(x) = K⋅C(x) </center>
+
+            <br>
+            
+            Date cuenta que si multiplicamos el divisor por número, el cociente de la división sale siempre multiplicado por su inverso.
+
+            </li>
+
+            <br>
+
+            <li> Si multiplicamos el dividendo P(x) de una división por un número K, la única alteración que se produce es que el resto resulta también multiplicado por la constante K. </li>
+
+            <br>
+
+            <p> Para más información, haga clic sobre el siguiente enlace: <a href="https://n9.cl/dl7ii"> //n9.cl/dl7ii </a> </p>
+
+        </div>
+
+        <!-- OBJ. 3: Ruffini y factorización -->
+
+        <div id="ruffini"> 
+
+            <!-- Título -->
+
+            <h2> Ruffini y factorización </h2>
+
+            <!-- Contenido -->
+
+            <br>
+
+            <p> La regla de Ruffini es un método o algoritmo que nos permite obtener las raíces de un polinomio. Es de gran utilidad ya que para grado mayor que 2 no disponemos de fórmulas, al menos fáciles, para poder obtenerlas. </p>
+
+            <br>
+
+            <p> Nota: la raíz de un polinomio es el número o valor que debe tomar la incógnita para que el polinomio sea igual a 0. Es decir, la regla de Ruffini nos permite resolver ecuaciones polinómicas. </p>
+
+            <br>
+            
+            <p> Cada vez que hacemos una tabla a partir de los coeficientes del polinomio, obtenemos una raíz y los coeficientes de un polinomio de un grado menor (un polinomio que divide al propio polinomio). De este modo, podemos ir reduciendo el grado del polinomio hasta llegar a uno de segundo grado cuyas raíces sabemos calcular rápidamente mediante la fórmula correspondiente. </p>
+
+            <br> 
+            
+            <p> En realidad, el método consiste escoger una posible raíz y desarrollar una tabla. Si el último resultado de la tabla es 0, el procedimiento habrá finalizado correctamente. Si no es así, tendremos que probar con otra posible raíz. </p>
+
+            <br>
+
+            <p> A continuación, explicamos el método a través de ejemplos, calcularemos las raíces de polinomios de tercer y quinto grado de forma minuciosa y factorizaremos los polinomios. </p>
+
+            <br>
+
+            <h4> Ejemplo de aplicación </h4>
+            
+            <br>
+
+            <p> Como primer ejemplo, vamos a buscar las raíces del siguiente polinomio de tercer grado: </p>
+
+            <br>
+
+            <center> x3−3x−2 </center>
+
+            <br>
+
+            <p> O, dicho de otro modo, vamos a buscar las soluciones de la siguiente ecuación de tercer grado: </p>
+
+            <br>
+
+            <center> x3−3x−2=0 </center>
+
+            <br>
+
+            <p> Aplicamos la regla de Ruffini: </p>
+
+            <br>
+
+            <p> Escribimos en la primera fila los coeficientes de cada monomio en orden decreciente de grado. Si hay algún coeficiente que sea 0 (en nuestro caso, es el coeficiente de x 2 ), también hay que escribirlo. </p>
+
+            <br>
+
+            <img src="img/m-6.1.jpg">
+
+            <br>
+
+            <p> Ahora, buscamos un número que sea divisor del término independiente, es decir, del término que no tiene parte literal (ninguna x), y lo escribimos en la columna de la izquierda. </p>
+
+            <br>
+
+            <p> En nuestro polinomio el término independiente es -2. Podemos escoger cualquiera de sus divisores, que son 1, -1, 2 ó -2. Escogemos, por ejemplo, 2, que es divisor de -2 y tiene el signo contrario. Si no funciona, tendremos que probar con otro hasta dar con el bueno: </p>
+
+            <br>
+
+            <img src="img/m-6.2.jpg">
+
+            <br> <br>
+
+            <p> El primer coeficiente pasa a la parte inferior de la línea, sin realizar ninguna operación. </p>
+
+            <br>
+
+            <img src="img/m-6.3.jpg">
+
+            <br> <br>
+
+            <p> Ahora, multiplicamos el coeficiente que hemos bajado por el número de la columna izquierda y el resultado lo escribimos debajo del siguiente coeficiente, pero arriba de la línea. </p>
+
+            <br>
+
+            <img src="img/m-6.4.jpg">
+
+            <br> <br>
+
+            <p> Sumamos el número que hemos escrito con el coeficiente que tiene arriba y el resultado lo escribimos debajo de la línea: </p>
+
+            <img src="img/m-6.5.jpg">
+
+            <br> <br>
+
+            <p> 
+                Repetimos el proceso:
+
+                <br>
+
+                Multiplicamos el número obtenido por el de la columna izquierda y lo situamos debajo del siguiente coeficiente: 
+            </p>
+
+            <img src="img/m-6.6.jpg">
+
+            <br> <br>
+
+            <p> Sumamos el número que hemos escrito con el coeficiente que tiene arriba y el resultado lo escribimos debajo de la línea: </p>
+
+            <br>
+
+            <img src="img/m-6.7.jpg">
+
+            <br> <br>
+
+            <p> Multiplicamos el número obtenido por el de la columna izquierda y lo situamos debajo del siguiente coeficiente: </p>
+
+            <img src="img/m-6.8.jpg">
+
+            <br> <br>
+
+            <p> Sumamos el número que hemos escrito con el coeficiente que tiene arriba y el resultado lo escribimos debajo de la línea: </p>
+
+            <img src="img/m-6.9.jpg">
+
+            <br> <br>
+
+            <p> Es importante que el último número del proceso sea 0. Si no es así, significa que el número de la columna izquierda no nos sirve y debemos escoger otro. </p>
+
+            <br>
+
+            <p> La raíz del polinomio que hemos calculado está en la columna izquierda. </p>
+
+            <br>
+            
+            <p> Tenemos la raíz x = 2. </p>
+
+            <br>
+
+            <p> Los números de debajo de la línea son los coeficientes de un polinomio de un grado menos (en nuestro caso, de grado 2). </p>
+
+            <img src="img/m-6.10.jpg">
+
+            <br> <br>
+
+            <p> El polinomio de un grado menor es: </p>
+
+            <img src="img/m-6.11.jpg">
+
+            <br> 
+
+            <p> Por lo tanto, la primera factorización es: </p>
+
+            <img src="img/m-6.13.jpg" alt="">
+
+            <br>
+
+            <p> Y la raíz x = 2. </p>
+
+            <br>
+
+            <p> Si queremos calcular las otras raíces, aplicamos de nuevo el método al polinomio de un grado menos. En nuestro caso, como es de grado 2, usamos la fórmula para las ecuaciones cuadráticas: </p>
+
+            <img src="img/m-6.14.jpg">
+
+            <br> <br>
+
+            <p> Es una raíz doble. </p>
+
+            <br>
+
+            <p> La raíz queda: </p>
+
+            <img src="img/m-6.15.jpg">
+
+            <br> <br>
+
+            <p> Las dos soluciones que tiene la ecuación x3−3x−2=0 son x=2 y x=−1. </p>
+
+            <br>
+
+            <p> 
+                Para más información, haga clic sobre el siguiente enlace: 
+
+                <br> <br>
+
+                <a href="https://n9.cl/kjt1m"> //n9.cl/kjt1m </a>
+
+                <br>
+
+                <a href="https://n9.cl/2phbi"> //n9.cl/2phbi </a>
+
+                <br>
+
+                <a href="https://n9.cl/sfbhw"> //n9.cl/sfbhw </a>
+            </p>
+            
+        </div>
+
+    </section>
+
+    <!-- Tercer lapso - Contenido -->
+    
+    <section class="third-moment-content"> 
+
+        <!-- OBJ. 1: Secciones cónicas: Circunferencia y elipse -->
+
+        <div id="circum-n-ellipse"> 
+
+            <!-- Título -->
+
+            <br> <!-- Separación considerable -->
+            <h2> Secciones cónicas: Circunferencia y elipse </h2>
+
+            <!-- Contenido -->
+
+            <br>
+
+            <h3> ¿Qué son las secciones cónicas? </h3>
+
+            <br>
+
+            <p> En geometría analítica, las secciones cónicas (o simplemente cónicas) son todas las curvas resultantes de las diferentes intersecciones entre un cono y un plano, cuando ese plano no pasa por el vértice del cono. Existen cuatro tipos de secciones cónicas: la circunferencia, la elipse, la parábola y la hipérbola. </p>
+
+            <br>
+
+            <p> A continuación tienes representadas gráficamente las 4 secciones posibles que se pueden obtener a partir de cualquier cono: </p>
+
+            <img src="img/m-7.1.jpg">
+
+            <br> <br>
+
+            <h3> Tipos de secciones cónicas </h3>
+
+            <br>
+
+            <p> Una vez visto el concepto de sección cónica, veamos cuáles son los tipos de secciones cónicas que existen: entre ellas tenemos la circunferencia y la elipse. </p>
+            
+            <br>
+
+            <h4> La circunferencia </h4>
+
+            <br>
+
+            <p> La circunferencia es una sección cónica que se puede hallar cortando un cono con un plano perpendicular a su eje de revolución (paralelo a la base). </p>
+
+            <br>
+
+            <p> La circunferencia es la cónica más conocida, está formada por un centro y un radio. </p>
+
+            <img src="img/m-7.2.jpg">
+
+            <br> <br>
+
+            <p> También, la circunferencia es el lugar geométrico de los puntos del plano que equidistan de un punto fijo llamado centro. </p>
+
+            <br>
+
+            <img src="img/m-7.3.jpg">
+
+            <br>
+
+            <p> Podemos hallar la ecuación una circunferencia cuando conocemos: </p>
+
+            <br>
+
+            <li> Tres puntos de la misma. </li>
+
+            <li> El centro y el radio. </li>
+
+            <li> Un punto y el centro. </li>
+
+            <li> El centro y una recta tangente. </li>
+
+            <br>
+
+            <h4> Ecuación de la circunferencia </h4>
+
+            <img src="img/m-7.4.jpg">
+
+            <br> <br>
+
+            <h4> Ejemplos </h4>
+
+            <img src="img/m-7.5.png">
+
+            <br>
+
+            <p> Para más información, haga clic sobre el siguiente enlace: <a href="https://n9.cl/acsye"> //n9.cl/acsye </a> </p>
+
+            <br>
+
+            <h4> La elipse </h4>
+
+            <br>
+
+            <p> La elipse es una línea curva, cerrada y plana muy parecida a la circunferencia, pero su forma es más ovalada. En particular, es el resultado de cortar la superficie de un cono con un plano oblicuo cuyo ángulo respecto al eje de revolución es mayor que el de la generatriz. </p>
+
+            <br>
+
+            <p> Además, todos los puntos de una elipse cumplen con una condición: la elipse es el lugar geométrico de todos los puntos de un plano cuya suma de distancias a otros dos puntos fijos (llamados focos F y F’) es constante. </p>
+
+            <br>
+
+            <img src="img/m-7.6.jpg">
+
+            <br>
+
+            <img src="img/m-7.7.png">
+
+            <h4> Ecuación de la elipse </h4>
+
+            <img src="img/m-7.8.png">
+
+            <h4> Ejemplos </h4>
+
+            <img src="img/m-7.9.png">
+            
+            <p> Para más información, haga clic sobre el siguiente enlace: <a href="https://n9.cl/80dqy5"> //n9.cl/80dqy5 </a> </p>
+
+        </div>
+
+        <!-- OBJ. 2: Secciones cónicas: Hipérbola -->
+
+        <div id="hyperbola"> 
+
+            <!-- Título -->
+
+            <h2> Secciones cónicas: Hipérbola </h2>
+
+            <!-- Contenido -->
+
+            <br>
+
+            <p> Dados dos puntos F1 y F2 llamados focos, se denomina hipérbola al conjunto de puntos del plano tales que el valor absoluto de la diferencia de sus distancias a los focos es constante. </p>
+
+            <br>
+
+            <center> H = {P(x,y)| |d(P;F1)–d(P;F2)| = 2a = cte} </center>
+
+            <br>
+
+            <p> Si la distancia entre los focos es d(F1,F2) = 2c, la condición para que sea una hipérbola es: </p>
+
+            <br>
+
+            <center> c > a > 0 </center>
+
+            <br>
+
+            <center> c^2 > a^2 </center>
+
+            <br>
+
+            <center> c^2 – a^2 = b^2 </center>
+
+            <br>
+            
+            <center> ⇒ c^2 = a^2 + b^2 </center>
+
+            <img src="img/m-8.1.png">
+
+            <br>
+
+            <h3> Ecuación canónica de la hipérbola </h3>
+
+            <br>
+
+            <p> Con una deducción similar a la de la elipse, se obtiene: </p>
+
+            <img src="img/m-8.1.1.png">
+
+            <br> <br>
+
+            <h3> Elementos de la hipérbola </h3>
+
+            <br>
+
+            <img src="img/m-8.1.2.png">
+
+            <img src="img/m-8.1.3.png">
+
+            <img src="img/m-8.2.gif">
+
+            <br> <br>
+
+            <p> Para trazar las asíntotas armemos un rectángulo auxiliar que ayudará a graficar la hipérbola, y luego tracemos las rectas que contienen a sus diagonales (esas rectas serán las asíntotas). Una vez trazadas las asíntotas, es sencillo realizar un gráfico aproximado de la hipérbola: </p>
+
+            <img src="img/m-8.3.gif">
+
+            <img src="img/m-8.1.4.png">
+
+            <img src="img/m-8.4.png">
+
+            <img src="img/m-8.1.5.png">
+
+            <h4> Ejemplo 1 </h4>
+
+            <img src="img/m-8.1.6.png">
+
+            <h4> Resolución </h4>
+
+            <img src="img/m-8.1.7.png">
+
+            <br>
+
+            <p> Grafiquemos lo obtenido hasta el momento: </p>
+
+            <img src="img/m-8.5.png">
+
+            <br> <br>
+
+            <p> Luego podemos dar las coordenadas de los vértices, de los focos y de las asíntotas: </p>
+
+            <img src="img/m-8.1.8.png" style="width: 15%;">
+
+            <br>
+
+            <p> La gráfica: </p>
+
+            <img src="img/m-8.6.png">
+
+            <br>
+
+            <h4> Ejemplo 2 </h4>
+
+            <img src="img/m-8.1.9.png">
+
+            <br>
+
+            <h4> Resolución </h4>
+
+            <img src="img/m-8.1.10.png">
+
+            <br>
+
+            <p> Grafiquemos: </p>
+
+            <img src="img/m-8.7.png">
+
+            <img src="img/m-8.1.11.png">
+
+            <br> <br>
+
+            <p> Enlace del contenido: <a href="https://aga.frba.utn.edu.ar/hiperbola/"> //aga.frba.utn.edu.ar/hiperbola/</a> </p>
+
+            <br>
+
+            <p> Para más información, haga clic en el siguiente enlace: <a href="https://n9.cl/wiho1"> //n9.cl/wiho1 </a> </p>
+
+        </div>
+
+        <!-- OBJ. 3: Inecuaciones -->
+
+        <div id="inequations"> 
+
+            <!-- Título -->
+
+            <h2> Inecuaciones </h2>
+
+            <!-- Contenido -->
+
+            <br>
+
+            <p> La desigualdad existente entre las dos expresiones algebraicas sólo se verifica, o más bien, solo es verdadera para determinados valores de la incógnita. </p>
+
+            <br>
+
+            <p> La solución de una inecuación formulada, significa determinar mediante ciertos procedimientos, el valor que la satisfaga. </p>
+
+            <br>
+                
+            <p> Si formulamos la inecuación algebraica siguiente, podremos notar en ella los elementos señalados anteriormente. Veamos: </p>
+
+            <br>
+
+            <center> 9x − 12 < 24</center>
+            
+            <br>
+
+            <p> Como se puede visualizar en la ejemplo, en la inecuación existen dos miembros. Está presente el miembro de la izquierda y el miembro de la derecha. En este caso la inecuación está conectada a través del siglo menor que. El cociente 9 y los números 12 y 24 son los datos conocidos. </p>
+
+            <br>
+
+            <h3> Clasificación de las inecuaciones </h3>
+
+            <br>
+
+            <p> Existen diferentes tipos de inecuaciones. Estas, se pueden clasificar de acuerdo al número de incógnitas y de acuerdo al grado de ellas. Para saber el grado de una inecuación, basta con identificar el mayor ellos. Así, tenemos los tipos siguientes: </p>
+
+            <br>
+
+            <li> De una incógnita. </li>
+            <li> De dos incógnitas. </li>
+            <li> De tres incógnitas. </li>
+            <li> De n incógnitas. </li>
+            <li> De primer grado. </li>
+            <li> De segundo grado. </li>
+            <li> De tercer grado. </li>
+            <li> De cuarto grado. </li>
+            <li> Inecuaciones de grado N. </li>
+
+            <br>
+
+            <h3> Operando con inecuaciones </h3>
+
+            <br>
+
+            <p> Antes de resolver un ejemplo de inecuaciones, conviene indicar las siguientes propiedades: </p>
+
+            <br>
+
+            <li> Cuando un valor que está sumando pasa a otro lado de la inecuación, se le pone un signo menos. </li>
+            <li> Si un valor que está restando pasa al otro lado de la inecuación se le pone un signo más. </li>
+            <li> Cuando un valor que está dividiendo pasa a otro lado de la inecuación, multiplicará a todo lo que haya en el otro lado. </li>
+            <li> Si un valor está multiplicando pasa al otro lado de la inecuación, entonces pasará dividiendo a todo lo que haya en la otra parte. </li>
+
+            <br>
+
+            <p> Es indiferente, pasar de lado izquierdo a derecho o de derecho a izquierdo de la inecuación. Lo importante es no olvidar los cambios de signo. Además, no importa hacia qué lado despejemos las incógnitas. </p>
+
+            <br>
+
+            <h4> Ejemplo resuelto de inecuación </h4>
+
+            <br>
+
+            <p> Para ver a fondo el proceso de resolución de una inecuación, vamos a plantear la siguiente: </p>
+
+            <br>
+
+            <center> 15x + 18 < 12x -24 </center>
+
+            <br>
+
+            <p> Para resolver esta inecuación debemos despejar la incógnita. Para ello, en primer lugar, se procede a agrupar los términos semejantes. Básicamente, esta parte consiste en pasar todas las incógnitas al lado izquierdo y todas las constantes al lado derecho. Así tenemos: </p>
+
+            <br>
+
+            <center> 15x – 12x < -24 – 18 </center>
+
+            <br>
+
+            <p> Sumando y restando estos términos semejantes. Tenemos: </p>
+
+            <br>
+
+            <center> 3x < – 42 </center>
+
+            <br>
+
+            <p> Finalmente, se procede ahora a despegar la incógnita y determinar su valor. </p>
+
+            <br>
+
+            <center> x < – 42/3 </center> 
+
+            <br>
+
+            <center> x < – 14 </center>
+
+            <br>
+
+            <p> De esta forma todos los valores menores que -14 satisfacen correctamente la inecuación formulada. </p>
+
+            <br>
+
+            <h4> Los sistemas de inecuación </h4>
+
+            <br>
+
+            <p> Cuando se formulan conjuntamente dos o más inecuaciones, hablamos entonces de sistemas de inecuaciones. Un ejemplo de la formulación de un sistema de inecuación es el siguiente: </p>
+            
+            <br>
+
+            <center> 18x + 22 < 12x – 14 (1) </center>
+
+            <br>
+
+            <center> 9x > 6 (2) </center>
+
+            <br>
+
+            <p> En este sistema han de cumplirse las dos inecuaciones para que el sistema tenga solución. Es decir, la solución son los valores de ‘x’ que permitan que se cumplan, al mismo tiempo, la inecuación (1) y la (2). </p>
+
+            <br>
+
+            <h4> Ejemplo resuelto de sistema de inecuación </h4>
+
+            <br>
+
+            <p> El proceso de resolución de un sistema de inecuación no resulta ser complicado, puesto para su resolución basta con resolver por separado cada una de las inecuaciones formuladas. </p>
+
+            <br>
+
+            <p> Para ver este proceso de resolución, tomemos como referencia el siguiente sistema de inecuación: </p>
+
+            <br>
+
+            <center> 18x + 22 < 12x – 14 </center>
+
+            <br>
+
+            <center> 9x > -6 </center>
+
+            <br>
+
+            <p> Resolvemos la primera inecuación del sistema, mediante el procedimiento vista en la resolución de inecuaciones: </p>
+
+            <br>
+
+            <center> 18x – 12x < -22 -14 </center>
+
+            <br>
+
+            <center> 6x < -36 </center>
+
+            <br>
+
+            <center> x < -36/6 </center>
+
+            <br>
+
+            <center> x < – 9 </center>
+
+            <br>
+
+            <p> Debe señalarse que no todos los sistemas de inecuaciones tienen solución. </p>
+
+            <br>
+
+            <p> Para más información, haga clic en el siguiente enlace: <a href="https://n9.cl/gufnu"> //n9.cl/gufnu </a> </p>
+
+            <br> <br>
+            
+        </div>
+
+    </section>
+
+    <!-- Pie de página -->
+
+    <div class="footer-distributed">
+
+        <!-- Contenido a la izquierda - Desarrolladores -->
+
+        <div id="footer-left">
+
+            <h3> LFPxALE <span> Developers </span> </h3>
+
+        </div>
+
+        <!-- Contenido central - Integrantes -->
+
+        <div id="footer-center">
+
+            <div>
+                <h5> <a href="about.html"> Acerca de </a> </h5>
+                <br>
+                <p> Descubre más acerca de nosotros 
+					<br>
+				    (haga clic sobre 'Acerca de'). 
+				</p>
+            </div>
+
+        </div>
+
+        <!-- Contenido a la derecha - Más información -->
+
+        <div id="footer-right">
+
+            <p class="footer-company-about">
+                <h5> Información del proyecto </h5>
+                <br>
+                <strong> EduTech </strong> es un proyecto que tiene como objetivo
+                <br> 
+                brindar un fácil acceso a la información académica.
+            </p>
+
+		</div>
+
+    </div>
+
+    <!-- Derechos - footer -->
+
+    <footer class="footer-copyright">
+
+        <p class="footer-company-name"> Todos los Derechos Reservados © 2023 <strong>EduTech</strong>, desarrollado por <strong>LFPxALE</strong> </p>
+
+    </footer>
+
+</body>
+</html>

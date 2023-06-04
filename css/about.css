@@ -1,0 +1,341 @@
+/* Fuentes importadas */
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Open+Sans:wght@300;400&display=swap');
+
+/* Propiedades generales */
+
+* {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+	scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+/* Cabecera de la página */
+
+#main-header {
+    background-image: url(/img/extrabg.png);
+    background-size: cover;
+    background-position-y: 25rem;
+    width: 100%;
+    padding: 3rem;
+}
+
+.logo {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding: 10px;
+    transition: all 0.60s ease 0s;
+}
+
+nav.logo:hover {
+    opacity: calc(0.4);
+}
+
+.logo img {
+    width: 80px;
+    margin-top: 1.5rem;
+}
+
+nav.logo h2 {
+    color: rgb(255, 255, 255);
+    margin-right: 15px;
+    margin-top: 2rem;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 100px;
+}
+
+hr {
+    color: rgb(255, 255, 255);
+    border: 0.01px solid;
+}
+
+a#logo img {
+    width: 55px;
+    height: 55px;
+}
+
+hgroup {
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+#main-header h1 {
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+
+#main-header h2 {
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+}
+
+/* Sección de links - contenido */
+
+.about-body {
+    padding: 5rem;
+}
+
+.info {
+    justify-content: center;
+    text-align: justify;
+    display: flex;
+}
+
+.info h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'League Spartan', sans-serif;
+    color: rgb(34, 34, 56);
+}
+
+.info p {
+    font-family: 'Open Sans', sans-serif;
+    color: #232224;
+}
+
+.info b {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.info img {
+    width: 60%;
+    margin-left: 5rem;
+}
+
+.participants {
+    justify-content: center;
+}
+
+.participants p {
+    margin-right: 20%;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    color: #232224;
+}
+
+.participants h2 {
+    font-size: 2rem;
+    font-family: 'League Spartan', sans-serif;
+    color: rgb(34, 34, 56);
+}
+
+.participants h3 {
+    font-size: 1.5rem;
+    font-family: 'League Spartan', sans-serif;
+    color: rgb(113, 109, 126);
+}
+
+.participants h4 {
+    font-size: 1.25rem;
+    font-family: 'League Spartan', sans-serif;
+    color: rgb(143, 142, 142);
+}
+
+/* Pie de página */
+
+.footer-distributed {
+    background-color: #232224;
+    box-sizing: border-box;
+    width: 100%;
+	text-align: left;
+    padding: 75px;
+    margin-top: 80px;
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    justify-content: space-between;
+    display: flex;
+}
+
+.footer-distributed #footer-left, .footer-distributed #footer-center, .footer-distributed #footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #bbb1eb;
+    font: normal 45px 'League Spartan', sans-serif;
+}
+
+.footer-distributed h3 span {
+    font: normal 40px 'League Spartan', sans-serif;
+    /* color: #aacfca; */
+    color: #bbb1eb;
+}
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-center p {
+    margin-top: 30px;
+}
+
+.footer-distributed h5 {
+    font-size: 18.5px;
+    color: rgb(214, 214, 214);
+    font-weight: bold;
+}
+
+#footer-center h5 {
+    cursor: pointer;
+}
+
+
+h5 a:link, h5 a:visited, h5 a:active {
+    color: rgb(214, 214, 214);
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
+h5 a:hover {
+    color: #85b3a9;
+}
+
+/* Copyright en el pie de página */
+
+.footer-copyright {
+    text-align: center;
+    background-color: #141414;
+    color: rgb(214, 214, 214);
+    padding: 25px;
+}
+
+/* Responsive - Adaptación a móvil */
+
+@media (max-width: 1200px) {
+
+    .info img {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 1100px) {
+
+    .info text {
+        margin-right: 5rem;
+    }
+
+    .info img {
+        width: 130%;
+        height: 40%;
+        margin-left: 5rem;
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    .info img {
+        width: 180%;
+        height: 60%;
+        margin-top: 3rem;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .info img {
+        width: 300%;
+        height: 80%;
+        margin-top: 5rem;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .info {
+        display: grid;
+    }
+
+    .info img {
+        width: 40%;
+        height: 90%;
+        margin: auto;
+        margin-top: 2rem;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .info img {
+        width: 65%;
+        height: 90%;
+    }
+
+    .footer-copyright {
+        line-height: 2rem;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .about-body {
+        padding: 2rem;
+    }
+
+    .info img {
+        width: 70%;
+        height: 90%;
+    }
+
+    .participants p {
+        margin-right: 0;
+    }
+
+}
+
+@media (max-width: 350px) {
+
+    #main-header h1 {
+        font-size: xx-large;
+    }
+
+    #main-header hgroup h2 {
+        font-size: large;
+    }
+
+    .info h2 {
+        margin-left: -1rem;
+        margin-right: -1rem;
+        font-size: 1.5rem;
+    }
+
+    .info img {
+        width: 90%;
+        height: 90%;
+    }
+
+    .participants h2 {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width: 230px) {
+
+    #main-header h1 {
+        margin-left: -2rem;
+    }
+
+    #main-header hgroup h2 {
+        margin-left: -2rem;
+    }
+
+}

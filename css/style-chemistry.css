@@ -1,0 +1,767 @@
+/* Fuentes importadas */
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+/* Propiedades generales */
+
+* {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+	scroll-behavior: smooth;
+}
+
+/* Cabecera de la página */
+
+#main-header {
+    /* Gradiente lineal */
+    background: -moz-linear-gradient(left, #77e686, #d2ebba);
+    background: -o-linear-gradient(left, #77e686, #d2ebba);
+    background: -webkit-linear-gradient(left, #77e686, #d2ebba);
+    background: linear-gradient(left, #77e686, #d2ebba);
+    width: 100%;
+}
+
+.logo {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding: 10px;
+    transition: all 0.60s ease 0s;
+}
+
+nav.logo:hover {
+    opacity: calc(0.4);
+}
+
+.logo img {
+    width: 60px;
+}
+
+nav.logo h2 {
+    color: rgb(255, 255, 255);
+    margin-top: 12px;
+    margin-right: 15px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+hr {
+    color: rgb(255, 255, 255);
+    border: 0.01px solid;
+}
+
+a#logo img {
+    width: 55px;
+    height: 55px;
+}
+
+hgroup {
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+#main-header h1 {
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+
+#main-header h2 {
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+}
+
+/* Índice de los temas por lapsos */
+
+#first-moment {
+    margin-left: 30px;
+    padding: 35px 15px;
+}
+
+#second-moment {
+    margin-top: -10%;
+    margin-left: 30px;
+    padding: 35px 15px;
+}
+
+#third-moment {
+    margin-top: -10%;
+    margin-left: 30px;
+    padding: 35px 15px;
+}
+
+div h1 {
+    font-size: 135%;
+}
+
+.title-moment {
+    margin-bottom: 15px;
+}
+
+.container {
+    margin-left: 35%;
+    margin-right: 32%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    border: rgba(151, 151, 151, 40%) 3px solid;
+    border-radius: 2%;
+}
+
+/* Estética y animación del texto del índice */
+
+.index-section a {
+    display: block;
+    text-decoration: none;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+div#first-moment a {
+    transition: all 0.45s ease 0s;
+}
+
+div#first-moment a:hover {
+    color: #83d18e;
+}
+
+div#second-moment a {
+    transition: all 0.45s ease 0s;
+}
+
+div#second-moment a:hover {
+    color: #add489;
+}
+
+div#third-moment a {
+    transition: all 0.45s ease 0s;
+}
+
+div#third-moment a:hover {
+    color: #4caa44;
+}
+
+/* Estructura del cuerpo / Contenido de la página */
+
+.first-moment-content p {
+    margin-left: 18%;
+    margin-right: 18%;
+    line-height: 25px;
+    color: #353434;
+}
+
+.first-moment-content li {
+    margin-left: 20%;
+    margin-right: 18%;
+    line-height: 25px;
+    color: #353434;
+    font-size: 1.075rem;
+    list-style: square;
+}
+
+.first-moment-content center {
+    font-size: 1.5rem;
+    color: #353434;
+}
+
+.first-moment-content h2 {
+    margin: 3% 0 2% 18%;
+    line-height: 30px;
+    color: #6ec279;
+    font-size: 1.75rem;
+}
+
+.first-moment-content h3 {
+    margin-left: 18%;
+    margin-right: 18%;
+    line-height: 25px;
+    color: #353434;
+    font-size: 1.25rem
+}
+
+.first-moment-content h4 {
+    margin-left: 18%;
+    margin-right: 18%;
+    line-height: 25px;
+    color: #353434;
+    font-size: 1.1rem;
+}
+
+.first-moment-content img {
+    margin-top: 2%;
+    margin-left: 28%;
+    width: 45%;
+}
+
+.table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+}
+  
+thead th:nth-child(3) {
+    width: 15%;
+}
+  
+thead th:nth-child(4) {
+    width: 35%;
+}
+  
+th {
+    padding: 20px;
+    background-color: #6d94e9;
+    color: white;
+}
+
+td {
+    padding: 20px;
+    background-color: #c8dbe9;
+    color: #353434;
+}
+
+/* Títulos del primer lapso */
+
+#carbon {
+    margin-top: 25px;
+}
+
+#nomenclature {
+    margin-top: 25px;
+}
+
+/* Segundo lapso */
+
+.second-moment-content p {
+    margin-left: 18%;
+    margin-right: 18%;
+    line-height: 25px;
+    color: #353434;
+}
+
+.second-moment-content li {
+    margin-left: 20%;
+    margin-right: 18%;
+    line-height: 25px;
+    color: #353434;
+    font-size: 1.075rem;
+    list-style: square;
+}
+
+.second-moment-content center {
+    font-size: 1.5rem;
+    color: #353434;
+}
+
+.second-moment-content h2 {
+    margin: 3% 0 2% 18%;
+    line-height: 30px;
+    color: #add489;
+    font-size: 1.75rem;
+}
+
+.second-moment-content h3 {
+    margin-left: 18%;
+    margin-right: 18%;
+    line-height: 25px;
+    color: #353434;
+    font-size: 1.25rem
+}
+
+.second-moment-content h4 {
+    margin-left: 18%;
+    margin-right: 18%;
+    line-height: 25px;
+    color: #353434;
+    font-size: 1.1rem;
+}
+
+.second-moment-content img {
+    margin-top: 2%;
+    margin-left: 28%;
+    width: 45%;
+}
+
+/* Títulos del segundo lapso */
+
+#gas-n-oil {
+    margin-top: 25px;
+}
+
+#hydrocarbons {
+    margin-top: 25px;
+}
+
+/* Tercer lapso */
+
+.third-moment-content p {
+    margin-left: 18%;
+    margin-right: 18%;
+    line-height: 25px;
+    color: #353434;
+}
+
+.third-moment-content li {
+    margin-left: 20%;
+    margin-right: 18%;
+    line-height: 25px;
+    color: #353434;
+    font-size: 1.075rem;
+    list-style: square;
+}
+
+.third-moment-content center {
+    font-size: 1.5rem;
+    color: #353434;
+}
+
+.third-moment-content h2 {
+    margin: 3% 0 2% 18%;
+    line-height: 30px;
+    color: #4caa44;
+    font-size: 1.75rem;
+}
+
+.third-moment-content h3 {
+    margin-left: 18%;
+    margin-right: 18%;
+    line-height: 25px;
+    color: #353434;
+    font-size: 1.25rem
+}
+
+.third-moment-content h4 {
+    margin-left: 18%;
+    margin-right: 18%;
+    line-height: 25px;
+    color: #353434;
+    font-size: 1.1rem;
+}
+
+.third-moment-content img {
+    margin-top: 2%;
+    margin-left: 28%;
+    width: 45%;
+}
+
+/* Títulos del tercer lapso */
+
+#polymers {
+    margin-top: 25px;
+}
+
+#biomolecules {
+    margin-top: 25px;
+}
+
+/* Pie de página */
+
+.footer-distributed {
+    background-color: #232224;
+    box-sizing: border-box;
+    width: 100%;
+	text-align: left;
+    padding: 75px;
+    margin-top: 80px;
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    justify-content: space-between;
+    display: flex;
+}
+
+.footer-distributed #footer-left, .footer-distributed #footer-center, .footer-distributed #footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #bbb1eb;
+    font: normal 45px 'League Spartan', sans-serif;
+}
+
+.footer-distributed h3 span {
+    font: normal 40px 'League Spartan', sans-serif;
+    /* color: #aacfca; */
+    color: #bbb1eb;
+}
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-center p {
+    margin-top: 30px;
+}
+
+.footer-distributed h5 {
+    font-size: 18.5px;
+    color: rgb(214, 214, 214);
+    font-weight: bold;
+}
+
+#footer-center h5 {
+    cursor: pointer;
+}
+
+
+h5 a:link, h5 a:visited, h5 a:active {
+    color: rgb(214, 214, 214);
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
+h5 a:hover {
+    color: #85b3a9;
+}
+
+/* Copyright en el pie de página */
+
+.footer-copyright {
+    text-align: center;
+    background-color: #141414;
+    color: rgb(214, 214, 214);
+    padding: 25px;
+}
+
+/* Responsive - Adaptación a móvil */
+
+@media (max-width: 1200px) {
+
+    .container #first-moment, #second-moment, #third-moment {
+        margin-left: 5% ;
+    }
+
+    .first-moment-content {
+        margin-left: -14%;
+        margin-right: -16%;
+        font-size: 13.5px;
+    }
+
+    .first-moment-content img {
+        width: 50%;
+        margin-left: 24%;
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+
+    .second-moment-content {
+        margin-left: -14%;
+        margin-right: -16%;
+        font-size: 13.5px;
+    }
+
+    .second-moment-content  h2 {
+        font-size: 25px;
+    }
+
+    .second-moment-content img {
+        width: 60%;
+        margin-left: 18.75%;
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+
+    .third-moment-content {
+        margin-left: -14%;
+        margin-right: -16%;
+        font-size: 13.5px;
+    }
+
+    .third-moment-content  h2 {
+        font-size: 25px;
+    }
+
+    .third-moment-content img {
+        width: 60%;
+        margin-left: 18.75%;
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    article.container {
+        margin-left: 30%;
+        width: 40%;
+	}
+
+    .container #first-moment, #second-moment, #third-moment {
+        margin-left: 5% ;
+    }
+
+    #footer-left {
+        margin-left: -1%;
+    }
+
+    #footer-center {
+        margin-left: -7%;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    article.container {
+        margin-left: 30%;
+        width: 42%;
+	}
+
+    .container #first-moment, #second-moment, #third-moment {
+        margin-left: 5% ;
+    }
+
+    .first-moment-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .second-moment-content h2 {
+        font-size: 1.5rem;
+        margin-right: rem;
+    }
+
+    #footer-center {
+        margin-right: 8%;
+        margin-left: 2%;
+        margin-top: 0.5%;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    article.container {
+        margin-left: 20%;
+        width: 60%;
+	}
+
+    .container #first-moment, #second-moment, #third-moment {
+        margin-left: 5% ;
+    }
+
+    .first-moment-content h2 {
+        margin-right: 10rem;
+    }
+
+    .second-moment-content h2 {
+        margin-right: 10rem;
+    }
+
+    .footer-distributed {
+        display: block;
+    }
+
+    .footer-distributed #footer-center, .footer-distributed #footer-left {
+        margin-bottom: 15%;
+    }
+
+    #footer-center {
+        margin-left: 0;
+    }
+
+    .footer-copyright {
+        line-height: 2rem;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .first-moment-content center {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    .second-moment-content center {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    .third-moment-content center {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .first-moment-content h2 {
+        margin-right: 6rem;
+    }
+
+    .second-moment-content h2 {
+        margin-right: 6rem;
+    }
+
+    .second-moment-content center {
+        font-size: large;
+        font-weight: bold;
+        color: #464646;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    article.container {
+        margin-left: 15%;
+        width: 70%;
+	}
+
+    .container #first-moment, #second-moment, #third-moment {
+        margin-left: 5% ;
+    }
+
+    .first-moment-content h2 {
+        font-size: x-large;
+    }
+
+    .second-moment-content h2 {
+        font-size: x-large;
+    }
+
+    .second-moment-content center {
+        font-size: larger;
+        font-weight: bold;
+        color: #464646;
+    }
+
+}
+
+@media (max-width: 350px) {
+
+    #main-header h1 {
+        font-size: xx-large;
+    }
+
+    #main-header hgroup h2 {
+        font-size: large;
+    }
+
+    article.container {
+        margin-left: 4.5%;
+        width: 90%;
+	}
+
+    .second-moment-content center {
+        font-size: 14px;
+        font-weight: bold;
+        color: #464646;
+    }
+
+    .first-moment-content h2 {
+        font-size: x-large;
+    }
+
+    .second-moment-content h2 {
+        font-size: x-large;
+    }
+
+    .third-moment-content h2 {
+        font-size: x-large;
+    }
+    
+    .footer-distributed #footer-center, .footer-distributed #footer-left, .footer-distributed #footer-right {
+        margin-left: -20%;
+    }
+
+    #footer-left h3 {
+        font-size: xx-large;
+    }
+
+    #footer-left span {
+        font-size: xx-large;
+    }
+
+}
+
+@media (max-width: 300px) {
+    
+    .first-moment-content center {
+        font-size: large;
+        font-weight: bold;
+        color: #464646;
+    }
+
+    .second-moment-content center {
+        font-size: 12px;
+        font-weight: bold;
+        color: #2b2a2a;
+    }
+
+    .third-moment-content center {
+        font-size: 12px;
+        font-weight: bold;
+        color: #464646;
+    }
+
+}
+
+@media (max-width: 270px) {
+
+    .second-moment-content center {
+        font-size: 11px;
+        font-weight: bold;
+        color: #000000;
+    }
+
+    .third-moment-content center {
+        font-size: 11px;
+        font-weight: bold;
+        color: #000000;
+    }
+
+    .footer-distributed #footer-center, .footer-distributed #footer-left, .footer-distributed #footer-right {
+        margin-left: -40%;
+    }
+
+    .first-moment-content h2 {
+        margin-right: 5rem;
+    }
+
+    .second-moment-content h2 {
+        margin-right: 5rem;
+    }
+
+}
+
+@media (max-width: 250px) {
+
+    .footer-distributed #footer-center, .footer-distributed #footer-left, .footer-distributed #footer-right {
+        margin-left: -60%;
+    }
+
+    .third-moment-content h2 {
+        margin-right: 15rem;
+    }
+
+    .first-moment-content center {
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    .second-moment-content center {
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    .third-moment-content center {
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+}
